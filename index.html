@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+	<meta charset="UTF-8">
+	<title>Fluxocket chat</title>
+	<style>
+		* { margin: 0; padding: 0; box-sizing: border-box; }
+		body { font: 14px Helvetica, Arial; }
+		.form { background: #ccc; padding: 10px; position: fixed; bottom: 0; width: 100%; }
+		.form .name { border: 0; padding: 10px; width: 15%; margin-right: 5px; }
+		.form .msg { border: 0; padding: 10px; width: 60%; margin-right: 5px; }
+			.form button { background: navy; color: #fff; border: none; padding: 10px; }
+		.messages { list-style-type: none; margin: 0; padding: 0; }
+		.messages li { padding: 5px 10px; }
+		.messages li:nth-child(odd) { background: #eee; }
+		.msgSender { font-weight: bold; }
+	</style>
+</head>
+<body>
+	<div id="container"></div>
+	<script src="/socket.io/socket.io.js"></script>
+	<script src="/bundle.js"></script>
+</body>
+</html>
