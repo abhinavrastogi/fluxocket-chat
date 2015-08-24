@@ -6,8 +6,7 @@ var fs = require('fs');
 var elasticsearch = require('elasticsearch');
 
 var client = new elasticsearch.Client({
-	host: 'localhost:9200',
-	log: 'trace'
+	host: '2ac54adbf4dadad2000.qb0x.com:80'
 });
 
 app.use(express.static('public'));
